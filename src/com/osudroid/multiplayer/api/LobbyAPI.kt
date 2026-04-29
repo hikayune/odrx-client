@@ -18,7 +18,7 @@ object LobbyAPI {
     /**
      * The hostname.
      */
-    const val HOST = "https://ornamentally-bibliophilistic-willard.ngrok-free.dev/multi"
+    const val HOST = "https://osuzenithapi.dpdns.org/multi"
 
     /**
      * The invite link host.
