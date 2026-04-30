@@ -23,7 +23,7 @@ import java.util.Map;
 
 public class WebViewFragment extends BaseFragment {
 
-    public static final String PROFILE_URL = "https://" + OnlineManager.hostname + "/user/profile.php?uid=";
+    public static final String PROFILE_URL = "https://" + OnlineManager.webHostname + "/user/profile.php?uid=";
 
     private WebView webview;
     private String url;
