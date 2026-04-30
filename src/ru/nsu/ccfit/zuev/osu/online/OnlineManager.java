@@ -35,6 +35,7 @@ public class OnlineManager {
     public static final String endpoint = "https://" + apiHostname + "/api/";
     public static final String updateEndpoint = endpoint + "update.php?lang=";
     public static final String defaultAvatarURL = "https://" + apiHostname + "/api/assets/avatar/0.png";
+    private static final String onlineVersion = "60";
 
     public static final OkHttpClient client = new OkHttpClient();
 
@@ -254,7 +255,7 @@ public class OnlineManager {
     }
 
     public RankedStatus getBeatmapStatus(String md5) throws OnlineManagerException {
-        var builder = new Request.Builder().url("https://" + hostname + "/api/v2/md5/" + md5);
+        var builder = new Request.Builder().url("https://" + apiHostname + "/api/v2/md5/" + md5);
         var request = builder.build();
 
         try (var response = client.newCall(request).execute()) {
