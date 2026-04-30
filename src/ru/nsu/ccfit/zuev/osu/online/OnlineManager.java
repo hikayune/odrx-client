@@ -30,11 +30,11 @@ import ru.nsu.ccfit.zuev.osu.online.PostBuilder.RequestException;
 import ru.nsu.ccfit.zuev.osu.scoring.BeatmapLeaderboardScoringMode;
 
 public class OnlineManager {
-    public static final String hostname = "osuzenith.vercel.app";
-    public static final String endpoint = "https://" + hostname + "/api/";
+    public static final String apiHostname = "osuzenithapi.dpdns.org";
+    public static final String webHostname = "osuzenith.vercel.app";
+    public static final String endpoint = "https://" + apiHostname + "/api/";
     public static final String updateEndpoint = endpoint + "update.php?lang=";
-    public static final String defaultAvatarURL = "https://" + hostname + "/user/avatar/0.png";
-    private static final String onlineVersion = "9";
+    public static final String defaultAvatarURL = "https://" + apiHostname + "/api/assets/avatar/0.png";
 
     public static final OkHttpClient client = new OkHttpClient();
 
